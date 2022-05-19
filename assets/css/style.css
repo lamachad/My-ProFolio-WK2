@@ -56,3 +56,26 @@ nav ul li a:hover {
     color: var(--ltmed);
     box-shadow: 0 0 10px white;
 }
+.main {
+    width: 100%;
+    padding: 78px 0px;
+}
+.main img{ 
+height: auto;
+width: 420px;
+}
+.about-text{
+    width: 550px;
+}
+
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+
+  }
+

@@ -1,0 +1,16 @@
+:root{
+    --vbright: #fefbe9;
+    --bright: #e1eedd;
+    --light: #4E9F3D;
+    --ltmed: #f0a04b; 
+    --medium: #836953;
+    --dark: #183a1d;
+    
+
+}
+* {
+    background-color: var();
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}

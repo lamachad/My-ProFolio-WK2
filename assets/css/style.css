@@ -87,15 +87,56 @@ nav ul li a:hover {
     font-family: Helvetica, sans-serif;
     line-height: 28px;
 }
+.wrapper {
+    margin: 10px auto;
+    padding: 0 10%;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+h3 {
+    color: #836953;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 15px;
+    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+.container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+.box {
+    height:300px;
+    padding: 20px;
+    background: var(--bright);
+    border-radius: 5px;
+}
+.img-card {
+    background-color: #f0a04b;
+    height: 200px;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+.anime-1 {
+    background-image: url('/Users/leandromachado/Documents/My-ProFolio-WK2/assets/images/anime.jpg');
+}
+h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    justify-content: left;
+    
+}
+.box p {
+    font-family: Helvetica, sans-serif;
+}
 
   @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
     }
-  
-    main {
-      max-width: 1200px;
+    .wrapper {
+        padding: 20px;
     }
-
-  }
+  
+}
 

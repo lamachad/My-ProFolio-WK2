@@ -77,7 +77,15 @@ nav ul li a:hover {
 }
 .about-text h2 {
     color: var(--ltmed);
-    
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+.about-text p {
+    color: var(--dark);
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    line-height: 28px;
 }
 
   @media screen and (max-width: 768px) {

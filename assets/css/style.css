@@ -1,10 +1,9 @@
 :root{
-    --vbright: #fefbe9;
-    --bright: #e1eedd;
-    --light: #4E9F3D;
-    --ltmed: #f0a04b; 
-    --medium: #836953;
-    --dark: #183a1d;
+    --bright: #F1FFFF;
+    --light: #90e0ef;
+    --med: #00b4d8; 
+    --dark: #0077b6;
+    --darkest: #00172d;
     
 
 }
@@ -15,7 +14,7 @@
     margin: 0;
 }
 body {
-    background-color: var(--vbright);
+    background-color: var(--med);
     display: flex;
     flex-direction: column;
     line-height: 20px;
@@ -25,12 +24,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1% 0;
-    background-color: var(--bright);
+    background-color: var(--med);
 }
 h1 {
     font-family: 'Ewert', cursive;
     font-size: 300%;
-    color: var(--medium);
+    color: var(--bright);
     margin-top: 1%;
     margin-left: 5%;
     
@@ -46,24 +45,26 @@ nav a {
     background-color: unset;
     text-decoration: none;
     padding: 8px 25px;
-    color: var(--dark);
+    color: var(--bright);
     font-weight: bold;
     font-family: sans-serif;
+    font-size: 1.1vw;
     transition: all .5s ease; 
 }
 nav ul li a:hover {
-    background-color: var(--vbright);
-    color: var(--ltmed);
-    box-shadow: 0 0 10px white;
+    background-color: var(--light);
+    color: var(--darkest);
+    transition: 0.8s;
+    box-shadow: 0 0 10px var(--bright);
 }
 .about {
     width: 100%;
     padding: 78px 0px;
 }
-.about img{ 
+.responsive {
+    width: 35%;
     height: auto;
-    width: 420px;
-}
+  }
 .about-text{
     width: 550px;
 }
@@ -76,16 +77,16 @@ nav ul li a:hover {
 
 }
 .about-text h2 {
-    color: var(--ltmed);
+    color: var(--bright);
     font-family: 'Abril Fatface', cursive;
-    font-size: 60px;
+    font-size: 4.5vw;
     margin-bottom: 60px;
 }
 .about-text p {
-    color: var(--dark);
-    font-size: 20px;
+    color: var(--darkest);
+    font-size: 1.2vw;
     font-family: Helvetica, sans-serif;
-    line-height: 28px;
+    line-height: 2.5vw;
 }
 .wrapper {
     margin: 10px auto;
@@ -94,25 +95,43 @@ nav ul li a:hover {
     text-transform: capitalize;
 }
 h3 {
-    color: #836953;
-    font-size: 45px;
+    color: var(--bright);
+    font-size: 3.1vw;
     text-align: center;
-    padding-bottom: 15px;
-    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
 }
 .container {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    color: var(--bright);
 }
 .box {
-    height:300px;
+    height: 300px;
     padding: 20px;
-    background: var(--bright);
+    background-color: var(--dark);
     border-radius: 5px;
 }
+.box h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    justify-content: left;
+    margin-bottom: .5vw;
+}
+.box p {
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--darkest);
+}
+.box:hover {
+    background-color: var(--light);
+    color: var(--darkest)!important;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
 .img-card {
-    background-color: #f0a04b;
     height: 200px;
     margin-bottom: 10px;
     background-size: cover;
@@ -120,14 +139,20 @@ h3 {
 .anime-1 {
     background-image: url('/Users/leandromachado/Documents/My-ProFolio-WK2/assets/images/anime.jpg');
 }
-h4 {
-    font-size: 20px;
-    font-family: sans-serif;
-    justify-content: left;
-    
+.passgen {
+    background-image: url('/Users/leandromachado/Documents/My-ProFolio-WK2/assets/images/passgen.jpg');
 }
-.box p {
-    font-family: Helvetica, sans-serif;
+.readmegen {
+    background-image: url('/Users/leandromachado/Documents/My-ProFolio-WK2/assets/images/readmegen.jpg');
+}
+.ref {
+    background-image: url('/Users/leandromachado/Documents/My-ProFolio-WK2/assets/images/ref.jpg');
+}
+.weather-dash {
+    background-image: url('/Users/leandromachado/Documents/My-ProFolio-WK2/assets/images/weather-dash.jpg');
+}
+.wplanner {
+    background-image: url('/Users/leandromachado/Documents/My-ProFolio-WK2/assets/images/wplanner.jpg');
 }
 
   @media screen and (max-width: 768px) {

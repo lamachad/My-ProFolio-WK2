@@ -164,22 +164,22 @@ h3 {
     transition: all .2s ease;
 }
 .anime-1 {
-    background-image: url('assets/images/anime.jpg');
+    background-image: url('../../assets/images/anime.jpg');
 }
 .passgen {
-    background-image: url('assets/images/passgen.jpg');
+    background-image: url('../../assets/images/passgen.jpg');
 }
 .readmegen {
-    background-image: url('assets/images/readmegen.jpg');
+    background-image: url('../../assets/images/readmegen.jpg');
 }
 .ref {
-    background-image: url('assets/images/ref.jpg');
+    background-image: url('../../assets/images/ref.jpg');
 }
 .weather-dash {
-    background-image: url('assets/images/weather-dash.jpg');
+    background-image: url('../../assets/images/weather-dash.jpg');
 }
 .wplanner {
-    background-image: url('assets/images/wplanner.jpg');
+    background-image: url('../../assets/images/wplanner.jpg');
 }
 footer {
     background-color: var(--darkest);

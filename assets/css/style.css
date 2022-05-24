@@ -27,12 +27,11 @@ header {
     background-color: var(--med);
 }
 h1 {
-    font-family: 'Ewert', cursive;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 300%;
     color: var(--bright);
     margin-top: 1%;
     margin-left: 5%;
-    
 }
 nav ul {
     display: flex;
@@ -60,6 +59,7 @@ nav ul li a:hover {
 .about {
     width: 100%;
     padding: 78px 0px;
+    margin-bottom: 50px;
 }
 .responsive {
     width: 35%;
@@ -78,18 +78,18 @@ nav ul li a:hover {
 }
 .about-text h2 {
     color: var(--bright);
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 4.5vw;
-    margin-bottom: 60px;
+    margin-bottom: 3vw;
 }
 .about-text p {
     color: var(--darkest);
     font-size: 1.2vw;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     line-height: 2.5vw;
 }
 .wrapper {
-    margin: 10px auto;
+    
     padding: 0 10%;
     padding-bottom: 10px;
     text-transform: capitalize;
@@ -97,32 +97,38 @@ nav ul li a:hover {
 h3 {
     color: var(--bright);
     font-size: 3.1vw;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     text-align: center;
     margin-bottom: 30px;
+  
 }
 .container {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     color: var(--bright);
+    position: relative;
+    margin-bottom: 20px;
 }
 .box {
     height: 300px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     padding: 20px;
     background-color: var(--dark);
     border-radius: 5px;
+    position: relative;
 }
 .box h4 {
     font-size: 20px;
-    font-family: sans-serif;
+    font-weight: bold;
     justify-content: left;
     margin-bottom: .5vw;
+   
 }
 .box p {
-    font-family: Helvetica, sans-serif;
     font-style: italic;
-    font-weight: bold;
     color: var(--darkest);
+   
 }
 .box:hover {
     background-color: var(--light);
@@ -130,11 +136,32 @@ h3 {
     cursor: pointer;
     transform: scale(1.03);
     transition: all 1s ease;
+   
 }
 .img-card {
     height: 200px;
     margin-bottom: 10px;
     background-size: cover;
+   
+}
+.button{ 
+    list-style: none;
+    
+}
+.plus a {
+    text-decoration: none;
+}
+.plus a i {
+    color: var(--bright);
+    position: absolute;
+    left: 85%;
+    bottom: 6%;
+    font-size: 2.0rem;
+}
+.plus a:hover i{
+    color: var(--dark);
+    transform: scale(1.05);
+    transition: all .2s ease;
 }
 .anime-1 {
     background-image: url('/Users/leandromachado/Documents/My-ProFolio-WK2/assets/images/anime.jpg');
@@ -153,6 +180,62 @@ h3 {
 }
 .wplanner {
     background-image: url('/Users/leandromachado/Documents/My-ProFolio-WK2/assets/images/wplanner.jpg');
+}
+footer {
+    background-color: var(--darkest);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: var(--bright);
+}
+.contact {
+    display: flex;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.contact h5 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    line-height: 2.2vw;
+}
+.contact p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li {
+    margin: 0 10px;
+}
+.socials a {
+    text-decoration: none;
+    color: var(--bright);
+
+}
+.socials a i {
+    font-size: 1.2rem;
+    transition: color .8s ease;
+}
+.socials a:hover i{
+    color: var(--dark);
+    transform: scale(1.2);
+}
+.bottom {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0;
 }
 
   @media screen and (max-width: 768px) {
